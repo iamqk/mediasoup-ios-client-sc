@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'mediasoup-ios-client-sc'
-  s.version          = '1.5.4.2'
+  s.version          = '1.5.4.3'
   s.summary          = 'Mediasoup 3 iOS Client'
 
 # This description is used to generate tags and improve search results.
