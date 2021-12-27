@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'mediasoup-ios-client-sc'
-  s.version          = '1.5.4.1'
-  s.summary          = 'A short description of mediasoup-ios-client-sc.'
+  s.version          = '1.5.4.2'
+  s.summary          = 'Mediasoup 3 iOS Client'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -26,17 +26,24 @@ TODO: Add long description of the pod here.
   s.license          = { :type => 'ISC', :file => 'LICENSE' }
   s.author           = { 'iamqk' => 'iamqk@msn.com' }
   s.source           = { :git => 'https://github.com/iamqk/mediasoup-ios-client-sc.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  # s.social_media_url = 'mediasoup'
 
   s.ios.deployment_target = '12.0'
+  spec.requires_arc = false
 
-  s.source_files = 'mediasoup-ios-client-sc/Classes/**/*'
+  spec.pod_target_xcconfig = {
+    "USE_HEADERMAP" => "NO",
+    "ALWAYS_SEARCH_USER_PATHS" => "NO",
+    "CLANG_CXX_LANGUAGE_STANDARD" => "c++14",
+    "CLANG_CXX_LIBRARY" => "libc++",
+    "OTHER_CPLUSPLUSFLAGS" => '"-stdlib=libc++" "-Wall" "-Wextra" "-Wpedantic"',
+    "VALID_ARCHS" => "$(ARCHS_STANDARD_64_BIT)",
+    "OTHER_LD_FLAGS" => "-all_load",
+  }
   
-  # s.resource_bundles = {
-  #   'mediasoup-ios-client-sc' => ['mediasoup-ios-client-sc/Assets/*.png']
-  # }
+  spec.frameworks = "AVFoundation", "AudioToolbox", "CoreAudio", "CoreMedia", "CoreVideo"
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  spec.vendored_frameworks = "mediasoup-ios-client-sc/release/combined/mediasoup_client_ios.framework", "mediasoup-ios-client-sc/release/combined/mediasoup_client_ios.framework/Frameworks/WebRTC.framework"
+
+  spec.module_map = "mediasoup-ios-client-sc/mediasoup-client-ios/mediasoup_ios_client.modulemap"
 end
