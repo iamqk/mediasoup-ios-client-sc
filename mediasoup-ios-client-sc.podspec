@@ -29,9 +29,9 @@ TODO: Add long description of the pod here.
   # s.social_media_url = 'mediasoup'
 
   s.ios.deployment_target = '12.0'
-  spec.requires_arc = false
+  s.requires_arc = false
 
-  spec.pod_target_xcconfig = {
+  s.pod_target_xcconfig = {
     "USE_HEADERMAP" => "NO",
     "ALWAYS_SEARCH_USER_PATHS" => "NO",
     "CLANG_CXX_LANGUAGE_STANDARD" => "c++14",
@@ -41,9 +41,9 @@ TODO: Add long description of the pod here.
     "OTHER_LD_FLAGS" => "-all_load",
   }
   
-  spec.frameworks = "AVFoundation", "AudioToolbox", "CoreAudio", "CoreMedia", "CoreVideo"
+  s.frameworks = "AVFoundation", "AudioToolbox", "CoreAudio", "CoreMedia", "CoreVideo"
 
-  spec.vendored_frameworks = "mediasoup-ios-client-sc/release/combined/mediasoup_client_ios.framework", "mediasoup-ios-client-sc/release/combined/mediasoup_client_ios.framework/Frameworks/WebRTC.framework"
+  s.vendored_frameworks = "mediasoup-ios-client-sc/release/combined/mediasoup_client_ios.framework", "mediasoup-ios-client-sc/release/combined/mediasoup_client_ios.framework/Frameworks/WebRTC.framework"
 
-  spec.module_map = "mediasoup-ios-client-sc/mediasoup-client-ios/mediasoup_ios_client.modulemap"
+  s.module_map = "mediasoup-ios-client-sc/mediasoup-client-ios/mediasoup_ios_client.modulemap"
 end
