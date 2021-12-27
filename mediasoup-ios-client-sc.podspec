@@ -43,7 +43,7 @@ TODO: Add long description of the pod here.
   
   s.frameworks = "AVFoundation", "AudioToolbox", "CoreAudio", "CoreMedia", "CoreVideo"
 
-  s.vendored_frameworks = "mediasoup-ios-client-sc/release/combined/mediasoup_client_ios.framework", "mediasoup-ios-client-sc/release/combined/mediasoup_client_ios.framework/Frameworks/WebRTC.framework"
+  s.vendored_frameworks = "release/combined/mediasoup_client_ios.framework", "release/combined/mediasoup_client_ios.framework/Frameworks/WebRTC.framework"
 
-  s.module_map = "mediasoup-ios-client-sc/mediasoup-client-ios/mediasoup_ios_client.modulemap"
+  s.module_map = "mediasoup-client-ios/mediasoup_ios_client.modulemap"
 end
