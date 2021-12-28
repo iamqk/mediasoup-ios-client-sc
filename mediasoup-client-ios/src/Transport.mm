@@ -21,6 +21,16 @@
     return self;
 }
 
+-(instancetype)initWithNativeTransportAndListener:(NSArray *)transportAndListener {
+    self = [super init];
+    if (self) {
+        self._nativeTransport = transportAndListener[0];
+        self._listener = transportAndListener[1];
+    }
+    
+    return self;
+}
+
 -(NSString *)getId {
     return [TransportWrapper getNativeId:self._nativeTransport];
 }
@@ -56,7 +66,17 @@
 }
 
 -(void)dealloc {
+    // not new by you, so do not free by you
+//    if (self._nativeTransport != nil) {
+//        [TransportWrapper nativeFreeTransport: self._nativeTransport];
+//    }
     [self._nativeTransport release];
+    
+    if (self._listener != nil) {
+        [TransportWrapper nativeFreeLisener: self._listener];
+    }
+    [self._listener release];
+
     [super dealloc];
 }
 

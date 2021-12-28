@@ -90,7 +90,11 @@
 }
 
 -(void)dealloc {
+    if (self._nativeProducer != nil) {
+        [ProducerWrapper nativeFreeProducer: self._nativeProducer];
+    }
     [self._nativeProducer release];
+    
     [self._nativeTrack release];
     [super dealloc];
 }

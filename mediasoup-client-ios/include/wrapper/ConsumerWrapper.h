@@ -12,6 +12,7 @@
 #define ConsumerWrapper_h
 
 @interface ConsumerWrapper : NSObject {}
++(void)nativeFreeConsumer:(NSValue *)nativeDevice;
 +(NSString *)getNativeId:(NSValue *)nativeConsumer;
 +(NSString *)getNativeProducerId:(NSValue *)nativeConsumer;
 +(bool)isNativeClosed:(NSValue *)nativeConsumer;

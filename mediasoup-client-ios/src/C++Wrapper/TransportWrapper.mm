@@ -18,6 +18,18 @@ using namespace mediasoupclient;
 
 @implementation TransportWrapper : NSObject
 
++(void)nativeFreeTransport:(NSValue *)nativeDevice {
+    MSC_TRACE();
+    
+    delete reinterpret_cast<mediasoupclient::Transport *>([nativeDevice pointerValue]);
+}
+
++(void)nativeFreeLisener:(NSValue *)lisener {
+    MSC_TRACE();
+    
+    delete reinterpret_cast<mediasoupclient::RecvTransport::Listener *>([lisener pointerValue]);
+}
+
 +(NSString *)getNativeId:(NSValue *)nativeTransport {
     MSC_TRACE();
     

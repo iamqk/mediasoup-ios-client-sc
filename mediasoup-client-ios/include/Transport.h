@@ -14,6 +14,7 @@
 @interface Transport : NSObject
 /*! @brief libmediasoupclient Transport object */
 @property(nonatomic, strong) NSValue* _nativeTransport;
+@property(nonatomic, strong) NSValue* _listener;
 
 /*!
     @brief Transport identifier. It matches the id of the server side transport

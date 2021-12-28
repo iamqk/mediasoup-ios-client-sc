@@ -18,6 +18,12 @@ using namespace mediasoupclient;
 
 @implementation ProducerWrapper : NSObject
 
++(void)nativeFreeProducer:(NSValue *)nativeDevice {
+    MSC_TRACE();
+    
+    delete reinterpret_cast<OwnedProducer *>([nativeDevice pointerValue]);
+}
+
 +(NSString *)getNativeId:(NSValue *)nativeProducer {
     MSC_TRACE();
     

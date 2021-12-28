@@ -78,7 +78,11 @@
 }
 
 -(void)dealloc {
+    if (self._nativeConsumer != nil) {
+        [ConsumerWrapper nativeFreeConsumer: self._nativeConsumer];
+    }
     [self._nativeConsumer release];
+    
     [self._nativeTrack release];
     [super dealloc];
 }

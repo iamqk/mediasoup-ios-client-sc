@@ -12,6 +12,7 @@
 #define ProducerWrapper_h
 
 @interface ProducerWrapper : NSObject {}
++(void)nativeFreeProducer:(NSValue *)nativeDevice;
 +(NSString *)getNativeId:(NSValue *)nativeProducer;
 +(bool)isNativeClosed:(NSValue *)nativeProducer;
 +(NSString *)getNativeKind:(NSValue *)nativeProducer;

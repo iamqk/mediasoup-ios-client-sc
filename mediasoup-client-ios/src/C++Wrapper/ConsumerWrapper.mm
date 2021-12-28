@@ -17,6 +17,12 @@ using namespace mediasoupclient;
 
 @implementation ConsumerWrapper : NSObject
 
++(void)nativeFreeConsumer:(NSValue *)nativeDevice {
+    MSC_TRACE();
+    
+    delete reinterpret_cast<OwnedConsumer *>([nativeDevice pointerValue]);
+}
+
 +(NSString *)getNativeId:(NSValue *)nativeConsumer {
     MSC_TRACE();
     const std::string nativeId = reinterpret_cast<OwnedConsumer *>([nativeConsumer pointerValue])->consumer()->GetId();

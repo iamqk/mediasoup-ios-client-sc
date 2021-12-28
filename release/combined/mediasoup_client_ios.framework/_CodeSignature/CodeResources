@@ -14,7 +14,7 @@
 		</data>
 		<key>Headers/ConsumerWrapper.h</key>
 		<data>
-		KvHsw4fEI4wftnVZXzlgQuv5M4U=
+		/2YDxEz0rJbPuUgEJASqFhSNi10=
 		</data>
 		<key>Headers/Device.hpp</key>
 		<data>
@@ -22,7 +22,7 @@
 		</data>
 		<key>Headers/DeviceWrapper.h</key>
 		<data>
-		qVMOxXOG97o4wtM1Ti+HEB0umGQ=
+		FMWlJwfiLLFztcHD3y3CzFiqbFw=
 		</data>
 		<key>Headers/Handler.hpp</key>
 		<data>
@@ -70,7 +70,7 @@
 		</data>
 		<key>Headers/ProducerWrapper.h</key>
 		<data>
-		VZ5hykwiey/Fn3vr9VkiOnbkxAU=
+		wY41fkLM27V7SONoem0IBRmGjj0=
 		</data>
 		<key>Headers/RTCUtils.h</key>
 		<data>
@@ -86,7 +86,7 @@
 		</data>
 		<key>Headers/Transport.h</key>
 		<data>
-		Mvg3Do0FZpYjVRJ7f/lLufdNR50=
+		G66b4873wjgLga0ahYusVXhU270=
 		</data>
 		<key>Headers/Transport.hpp</key>
 		<data>
@@ -94,7 +94,7 @@
 		</data>
 		<key>Headers/TransportWrapper.h</key>
 		<data>
-		RgDAkitkPJS6oD7biB6GmE9jKwc=
+		snkBqG/soeek3+6K4IoZC+uXJJk=
 		</data>
 		<key>Headers/Utils.hpp</key>
 		<data>
@@ -3382,7 +3382,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		SH7H7wNyA7IDBKAoBjFKxt5A9yc=
+		Rh4LSib2ei4niyg7+3d+bU9rjfc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -3409,7 +3409,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			N1ctnL/BozOvkPlUsOirFQXlRZCAvp4h0twVxicl13Q=
+			ewfwRtpv3PL2d4rfOzUJIUSZkHU0ZO6jikOGbFyZh28=
 			</data>
 		</dict>
 		<key>Headers/Device.hpp</key>
@@ -3423,7 +3423,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			xpHRcmO/zChFQ9Cm48qRKfjZg8LUTdeHXIQnFHSl2Iw=
+			ijKJlBHCFJ5eT4xsjiRpI9D6aAS1N/vWdEloM3MBBrs=
 			</data>
 		</dict>
 		<key>Headers/Handler.hpp</key>
@@ -3507,7 +3507,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			AaVTvB1um1nGiqMz1NOx/HHnxrd1Z7zFgB+PyLsmgsk=
+			ObXU2VcKHV1OfP0Ncowdsn5hOLWR/x+RIaq/3uHhVoM=
 			</data>
 		</dict>
 		<key>Headers/RTCUtils.h</key>
@@ -3535,7 +3535,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			5CjgRbCLKF+gB2fvg4RydusA83vl/FbKmQm7gr8XGwQ=
+			rqyJHUNGKhyA3k67MPz96ddbUxQBah/EzgSGtn2DGvU=
 			</data>
 		</dict>
 		<key>Headers/Transport.hpp</key>
@@ -3549,7 +3549,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			n54zqwYucxYqfYgsA1tp/eZQwmL/kyEDFed/tk/Twjs=
+			O1ErgGMm0m+BdwlRHbqF2rAViRQWAzAVEPpDwXOSGLk=
 			</data>
 		</dict>
 		<key>Headers/Utils.hpp</key>
