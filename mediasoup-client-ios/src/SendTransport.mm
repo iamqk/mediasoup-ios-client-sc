@@ -43,6 +43,10 @@
 }
 
 -(void)dealloc {
+    if (self._listener != nil) {
+        [TransportWrapper nativeFreeRecvLisener: self._listener];
+    }
+
     [super dealloc];
 }
 

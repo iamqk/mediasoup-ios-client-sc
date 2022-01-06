@@ -27,7 +27,19 @@ using namespace mediasoupclient;
 +(void)nativeFreeLisener:(NSValue *)lisener {
     MSC_TRACE();
     
-    delete reinterpret_cast<mediasoupclient::RecvTransport::Listener *>([lisener pointerValue]);
+    delete reinterpret_cast<mediasoupclient::Transport::Listener *>([lisener pointerValue]);
+}
+
++(void)nativeFreeSendLisener:(NSValue *)lisener {
+    MSC_TRACE();
+    
+    delete reinterpret_cast<SendTransportListenerWrapper *>([lisener pointerValue]);
+}
+
++(void)nativeFreeRecvLisener:(NSValue *)lisener {
+    MSC_TRACE();
+    
+    delete reinterpret_cast<RecvTransportListenerWrapper *>([lisener pointerValue]);
 }
 
 +(NSString *)getNativeId:(NSValue *)nativeTransport {

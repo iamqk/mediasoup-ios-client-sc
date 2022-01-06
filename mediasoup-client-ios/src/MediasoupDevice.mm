@@ -28,7 +28,7 @@
     if (self.nativeDevice != nil) {
         [DeviceWrapper nativeFreeDevice: self.nativeDevice];
     }
-    self.nativeDevice = nil;
+    [self.nativeDevice release];
     [super dealloc];
 }
 

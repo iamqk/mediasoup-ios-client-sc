@@ -72,9 +72,9 @@
 //    }
     [self._nativeTransport release];
     
-    if (self._listener != nil) {
-        [TransportWrapper nativeFreeLisener: self._listener];
-    }
+//    if (self._listener != nil) {
+//        [TransportWrapper nativeFreeLisener: self._listener];
+//    }
     [self._listener release];
 
     [super dealloc];
