@@ -92,10 +92,11 @@ Once build include the libwebrtc.a, libmediasoup.a, libsdptransform.a in the pro
 
 
 ## Build libmediasoupclient on an M1 device
-use ios.toolchain.cmake from https://github.com/leetal/ios-cmake 
-add -DCMAKE_TOOLCHAIN_FILE=ios.toolchain.cmake -DPLATFORM=OS64
+download and copy ios.toolchain.cmake from https://github.com/leetal/ios-cmake into dependencies
+append -DCMAKE_TOOLCHAIN_FILE=ios.toolchain.cmake -DPLATFORM=OS64,
 -DCMAKE_TOOLCHAIN_FILE=ios.toolchain.cmake -DPLATFORM= SIMULATOR64
-to correspond cmake file above
+to correspond cmake command line above
 
-modify cmakelist file
+modify CMakeLists.txt file under dependencies
 add add_definitions(-DWEBRTC_MAC) to prevent compile error, also need to modify the byte_order.h too
+remember to delete cached folder build and build_86_64
