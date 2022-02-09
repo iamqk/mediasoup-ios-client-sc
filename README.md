@@ -50,6 +50,7 @@ https://github.com/ethand91/mediasoup-ios-client/blob/master/documentation/Api.m
 #### INSTALLATION (Only needed for development, not needed if you only intent to use the project)
 
 https://github.com/ethand91/mediasoup-ios-client/blob/master/documentation/Installation.md
+
 https://github.com/iamqk/mediasoup-ios-client-sc/blob/master/documentation/Installation.md
 
 ## Usage Example
