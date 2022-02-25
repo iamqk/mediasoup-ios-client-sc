@@ -39,7 +39,7 @@ public:
     }
     
     ~ConsumerListenerWrapper() {
-        [consumer_ release];
+//        [producer_ release];
         [listener_ release];
     }
     
@@ -49,31 +49,31 @@ public:
         this->listener_ = obj.listener_;
         this->consumer_ = obj.consumer_;
     }
-
+    
     void OnTransportClose(mediasoupclient::Consumer* nativeConsumer) override {
         [this->listener_ onTransportClose:this->consumer_];
     };
     
     void SetConsumer(::Consumer *consumer) {
-        this->consumer_ = [consumer retain];
+        this->consumer_ = consumer;
     }
 };
 
 class OwnedConsumer {
 public:
-    OwnedConsumer(mediasoupclient::Consumer* consumer, mediasoupclient::Consumer::Listener* listener)
+    OwnedConsumer(mediasoupclient::Consumer* consumer, ConsumerListenerWrapper* listener)
     : consumer_(consumer), listener_(listener) {}
     
     ~OwnedConsumer() {
-        delete listener_;
         delete consumer_;
+        delete listener_;
     };
     
     mediasoupclient::Consumer *consumer() const { return consumer_; }
     
 private:
     mediasoupclient::Consumer* consumer_;
-    mediasoupclient::Consumer::Listener* listener_;
+    ConsumerListenerWrapper* listener_;
 };
 
 #endif /* ConsumerWrapper_h */

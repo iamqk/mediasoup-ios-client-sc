@@ -41,9 +41,9 @@ public:
     }
     
     ~ProducerListenerWrapper() {
-        [producer_ release];
+//        [producer_ release];
         [listener_ release];
-    };
+    }
     
     ProducerListenerWrapper(const ProducerListenerWrapper &obj) {
         [obj.listener_ retain];
@@ -57,7 +57,7 @@ public:
     };
     
     void SetProducer(::Producer *producer) {
-        this->producer_ = [producer retain];
+        this->producer_ = producer;
     }
 };
 

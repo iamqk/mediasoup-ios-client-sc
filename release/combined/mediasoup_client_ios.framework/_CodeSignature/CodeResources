@@ -4,6 +4,10 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>.DS_Store</key>
+		<data>
+		uNT3TRu1iUtyqosX6Op6G0tmCrQ=
+		</data>
 		<key>Headers/Consumer.h</key>
 		<data>
 		JQxUFVhiQIfUeHc1+3NWaZAuuVA=
@@ -14,7 +18,7 @@
 		</data>
 		<key>Headers/ConsumerWrapper.h</key>
 		<data>
-		/2YDxEz0rJbPuUgEJASqFhSNi10=
+		dFWZm+NqT7fuVOYYfPvJK3yR5VQ=
 		</data>
 		<key>Headers/Device.hpp</key>
 		<data>
@@ -70,7 +74,7 @@
 		</data>
 		<key>Headers/ProducerWrapper.h</key>
 		<data>
-		wY41fkLM27V7SONoem0IBRmGjj0=
+		IKdSdo7kCGEjXsLoNgOWrIkz1yQ=
 		</data>
 		<key>Headers/RTCUtils.h</key>
 		<data>
@@ -3382,7 +3386,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Rh4LSib2ei4niyg7+3d+bU9rjfc=
+		x+vG3zfXSbo9bAPEBk3RTbLWaXI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -3409,7 +3413,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ewfwRtpv3PL2d4rfOzUJIUSZkHU0ZO6jikOGbFyZh28=
+			4xiJgPClxDSrI0h2Vkk13HWYiVbEocLObvSGeX1B5uw=
 			</data>
 		</dict>
 		<key>Headers/Device.hpp</key>
@@ -3507,7 +3511,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ObXU2VcKHV1OfP0Ncowdsn5hOLWR/x+RIaq/3uHhVoM=
+			xMt7Yxp+3KDLx1h0doci8oNaOEsk6H65G89hFm67DV0=
 			</data>
 		</dict>
 		<key>Headers/RTCUtils.h</key>
