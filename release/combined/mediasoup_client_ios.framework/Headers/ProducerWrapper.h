@@ -38,6 +38,7 @@ public:
     ProducerListenerWrapper(Protocol<ProducerListener>* listener)
     : listener_(listener) {
         [listener_ retain];
+//        producer_ = nil;
     }
     
     ~ProducerListenerWrapper() {
