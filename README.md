@@ -27,7 +27,8 @@ Add the below into your Podfile:
 use_frameworks!
 
 target "target" do
-  pod "mediasoup_ios_client"
+  #pod "mediasoup_ios_client"
+  pod 'mediasoup-ios-client-sc', :git => "https://github.com/iamqk/mediasoup-ios-client-sc", :tag => '1.5.4.8'
 end
 ```
 
